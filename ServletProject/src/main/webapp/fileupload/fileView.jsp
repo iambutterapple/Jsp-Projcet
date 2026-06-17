@@ -47,8 +47,56 @@
 <head>
 <meta charset="UTF-8">
 <title>업로드 결과</title>
+<link href="style.csss" rel="stylesheet" type="text/css">
 </head>
 <body>
+<table width="75%" border="1" align="center" cellpadding="1" cellspacing="2" bordercolor="#660000" bgcolor="#ffff99">
+	<tr bgcolor="#ffcc00">
+		<td width="10%" bgcolor="#ffcc00">
+			<div align="right"> 
+				<strong>user</strong>
+			</div>
+		</td>
+		<td width="30%" bgcolor="#ffcc00">
+			<%=paramUser %>
+		</td>
+		<td width="10%" bgcolor="#ffcc00">
+			<div align="right"> 
+				<strong>title</strong>
+			</div>
+		</td>
+		<td width="30%" bgcolor="#ffcc00">
+			<%=paramTitle %>
+		</td>
+	</tr>
+	<tr bgcolor="#ffcc00">
+		<td width="10%" bgcolor="#ffcc00">
+			<div align="right"> 
+				<strong>Abstract</strong>
+			</div>
+		</td>
+		<td width="50%" colspan="3">
+			<textarea rows="5" cols="50">
+				<%=paramAbstract %>
+			</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4" bgcolor="#ffffff">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4"><strong>업로드된 파일</strong></td>
+	</tr>
+	<%for(int i=0;i<saveFiles.size();i++){ %>
+		<tr bgcolor="#ffcc00">
+			<td colspan="4">
+				<a href=<%="/ServletProject/"+saveFolder+"/"+saveFiles.get(i)%>>
+					<strong><%=origFiles.get(i) %></strong>
+				</a>
+			</td>
+		</tr>
+	<%} %>
+</table>
 	<h2>업로드가 완료되었습니다.</h2>
 	<ul>
 		<li>User: <%=paramUser%></li>
