@@ -1,0 +1,7 @@
+package com.cookie;
+
+public class LoginDataBean {
+
+	private String id;
+	private String passwd;
+}

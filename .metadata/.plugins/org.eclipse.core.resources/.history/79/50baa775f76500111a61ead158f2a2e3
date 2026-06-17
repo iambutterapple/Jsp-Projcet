@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!--
+    		cookie
+    			- 웹 브라우저가 보관하고 있는 데이터로써 웹서버에 요청을 보낼때 함께 전송함
+    		cookie
+    		
+    		1. 생성단계
+    		쿠키를 사용하기 위해 먼저 쿠키를 생성해야함
+    		jsp페이지에서 웹서버에 쿠키를 생성하고,자바스크립트를 사용해서 사용자측에서
+    		쿠키를 생성함,이렇게 생성된 쿠키는 응답데이터와 암께 서버로 전송됨.
+    		
+    		2. 저장단계
+    		웹 브라우저는 응답데이터에 포함된 쿠키를 쿠키 저장소에 보관함
+    		3. 전송단계
+    		
+      -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+</body>
+</html>

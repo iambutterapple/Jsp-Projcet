@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%@ page import="com.cookie.LoginDBbean" %>
+<% 
+	request.setCharacterEncoding("utf-8"); 
+	
+	String id = request.getParameter("id");
+	String password= request.getParameter("password");
+	
+	LoginDBbean dbpro = LoginDBbean.getInstance();
+	int check = dbpro.LoginCheck(id, passwd);
+	
+	if(check == 1){
+		Cookie cookie = new Cookie("memId",id);
+		
+	}else if(check == 0){
+		
+	}
+	
+			
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+</body>
+</html>

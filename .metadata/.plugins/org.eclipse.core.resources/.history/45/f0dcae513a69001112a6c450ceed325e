@@ -1,0 +1,58 @@
+<%@page import="java.lang.reflect.Field"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.oreilly.servlet.MultipartRequest" %>
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
+<%@ page import="java.util.*" %> 
+<%@ page import="java.io.*" %> 
+<%
+
+	String readFolder = "";
+	String saveFolder = "upload";
+	String encType="utf-8";
+	int maxSize = 10*1024*1024;
+	ServletContext context = getServletContext();
+	readFolder = context.getRealPath(saveFolder);
+	
+	ArrayList saveFiles = new ArrayList();
+	ArrayList origFiles = new ArrayList();
+	
+	String paramUser = "";
+	String paramTitle="";
+	String paramAbstract="";
+	
+	try{
+		
+		MultipartRequest multi = new MultipartRequest(request,readFolder,maxSize,encType,new DefaultFileRenamePolicy());
+		paramUser = multi.getParameter("txtUser");
+		paramTitle = multi.getParameter("txtTitle");
+		paramAbstract = multi.getParameter("txtAbstract");
+		
+		Enumeration files = multi.getFileNames();
+		
+		while(files.nextElement()){
+			String name = (String)files.nextElement();
+			saveFiles.add(multi.getFilesystemName(name));
+			origFiles.add(multi.getOriginalFileName(name));
+		}
+		
+	
+%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+</body>
+</html>
+<%
+	}catch(IOException e){
+		e.printStackTrace();
+	}
+	}catch(IOException e){
+		e.printStackTrace();
+	}
+%>

@@ -1,0 +1,117 @@
+<%@page import="java.lang.reflect.Field"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="com.oreilly.servlet.MultipartRequest" %>
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
+<%@ page import="java.util.*" %> 
+<%@ page import="java.io.*" %> 
+<%
+	request.setCharacterEncoding("utf-8");
+
+	String readFolder = "";
+	String saveFolder = "upload";
+	String encType = "utf-8";
+	int maxSize = 10 * 1024 * 1024; // 10MB
+	
+	ServletContext context = getServletContext();
+	readFolder = context.getRealPath(saveFolder);
+	
+	// 폴더가 없을 경우 자동 생성하는 안전장치 추가
+	File dir = new File(readFolder);
+	if(!dir.exists()) {
+		dir.mkdirs();
+	}
+	
+	// 제네릭(<String>)을 추가하여 타입 안정성 확보
+	ArrayList<String> saveFiles = new ArrayList<String>();
+	ArrayList<String> origFiles = new ArrayList<String>();
+	
+	String paramUser = "";
+	String paramTitle = "";
+	String paramAbstract = "";
+	
+	try {
+		// 파일 업로드 실행
+		MultipartRequest multi = new MultipartRequest(request, readFolder, maxSize, encType, new DefaultFileRenamePolicy());
+		
+		// 이전 페이지에서 넘겨준 hidden 파라미터 받기
+		paramUser = multi.getParameter("txtUser");
+		paramTitle = multi.getParameter("txtTitle");
+		paramAbstract = multi.getParameter("txtAbstract");
+		
+		// 파일 이름 목록 가져오기
+		Enumeration<?> files = multi.getFileNames();
+		
+		// [수정] nextElement() 중복 호출 오류 해결
+		while(files.hasMoreElements()) {
+			String name = (String)files.nextElement();
+			
+			// 실제 업로드된 파일이 있는지 확인 후 리스트에 추가
+			if(multi.getFilesystemName(name) != null) {
+				saveFiles.add(multi.getFilesystemName(name));
+				origFiles.add(multi.getOriginalFileName(name));
+			}
+		}
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>업로드 결과 확인</title>
+<style>
+	table { width: 60%; border-collapse: collapse; margin: 20px auto; font-family: sans-serif; }
+	th, td { border: 1px solid #bbbbbb; padding: 10px; text-align: left; }
+	th { background-color: #f2f2f2; width: 25%; }
+	.center { text-align: center; }
+</style>
+</head>
+<body>
+
+	<h2 class="center">업로드 완료 결과</h2>
+	
+	<table>
+		<tr>
+			<th>작성자 (User)</th>
+			<td><%= paramUser != null ? paramUser : "" %></td>
+		</tr>
+		<tr>
+			<th>제목 (Title)</th>
+			<td><%= paramTitle != null ? paramTitle : "" %></td>
+		</tr>
+		<tr>
+			<th>초록 (Abstract)</th>
+			<td><%= paramAbstract != null ? paramAbstract.jspReplace("\n", "<br>") : "" %></td>
+		</tr>
+		<tr>
+			<th>업로드된 파일 목록</th>
+			<td>
+				<% if(saveFiles.isEmpty()) { %>
+					업로드된 파일이 없습니다.
+				<% } else { %>
+					<ul>
+					<% for(int i=0; i<saveFiles.size(); i++) { %>
+						<li>
+							<strong>원본 파일명:</strong> <%= origFiles.get(i) %><br>
+							<strong>저장 파일명:</strong> <%= saveFiles.get(i) %>
+						</li>
+					<% } %>
+					</ul>
+				<% } %>
+			</td>
+		</tr>
+	</table>
+
+	<div class="center">
+		<a href="javascript:history.back();">[다시 업로드하기]</a>
+	</div>
+
+</body>
+</html>
+<%
+	} catch(IOException e) {
+		out.println("<script>alert('파일 업로드 중 오류가 발생했습니다(용량 초과 등).'); history.back();</script>");
+		e.printStackTrace();
+	} catch(Exception ee) {
+		out.println("<script>alert('시스템 오류가 발생했습니다.'); history.back();</script>");
+		ee.printStackTrace();
+	}
+%>

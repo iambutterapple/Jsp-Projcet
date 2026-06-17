@@ -1,0 +1,85 @@
+package com.cookie;
+
+import java.sql.*;
+import javax.sql.*;
+import javax.naming.*;
+
+public class LoginDBbean {
+
+	private static LoginDBbean instance = new LoginDBbean();
+
+	public static LoginDBbean getInstance() {
+		return instance;
+	}
+	
+	private LoginDBbean() {
+	
+	}
+	
+	private Connection getConnection()throws Exception{
+		Context initContext = new InitialContext();
+		Context envContext  = (Context)initContext.lookup("java:/comp/env");
+		DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+		return ds.getConnection();
+	}
+	
+	
+	public int LoginCheck(String id,String passwd)throws Exception{
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String dbpasswd = "";
+		
+		
+		int x = -1;//아이디 존재하지 않음
+		
+		try {
+			con = getConnection();
+			
+			String sql = "SELECT PASSWORD FROM MEMBER WHERE 1=1 AND ID = ?";
+			
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			if(rs.next())
+			{
+				dbpasswd = rs.getString("password");
+				if(dbpasswd.equals(passwd)) {
+					x =1;
+				}else {
+					x = 0;
+				}
+			}else {
+				x = -1;
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally{
+			if(rs != null){
+				try{
+					rs.close();
+				}catch(SQLException s){
+					s.printStackTrace();
+				}
+			}
+			if(pstmt != null){
+				try{
+					pstmt.close();
+				}catch(SQLException s){
+					s.printStackTrace();
+				}
+			}
+			if(con != null){
+				try{
+					con.close();
+				}catch(SQLException s){
+					s.printStackTrace();
+				}
+			}
+		}
+	}
+	
+	
+}

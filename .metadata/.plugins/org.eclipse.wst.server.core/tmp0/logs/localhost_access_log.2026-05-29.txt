@@ -1,0 +1,16 @@
+127.0.0.1 - - [29/May/2026:09:39:30 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [29/May/2026:09:39:31 +0900] "GET /ServletProject/sample/SimpleForm.jsp HTTP/1.1" 200 291
+0:0:0:0:0:0:0:1 - - [29/May/2026:09:39:31 +0900] "GET /favicon.ico HTTP/1.1" 404 819
+0:0:0:0:0:0:0:1 - - [29/May/2026:09:39:39 +0900] "POST /ServletProject/sample/simpleBean.jsp HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [29/May/2026:09:39:41 +0900] "POST /ServletProject/sample/simpleBean.jsp HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:00:13 +0900] "GET /ServletProject/sample/SimpleForm.jsp HTTP/1.1" 200 291
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:00:16 +0900] "POST /ServletProject/sample/simpleBean.jsp HTTP/1.1" 200 295
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:42:22 +0900] "GET /ServletProject/actiontag/register.jsp HTTP/1.1" 200 346
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:43:13 +0900] "GET /ServletProject/actiontag/register.jsp HTTP/1.1" 200 486
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:44:18 +0900] "GET /ServletProject/actiontag/register.jsp HTTP/1.1" 200 613
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:48:07 +0900] "POST /ServletProject/actiontag/add.jsp HTTP/1.1" 200 115
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:52:57 +0900] "POST /ServletProject/actiontag/add.jsp HTTP/1.1" 500 3441
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:55:02 +0900] "POST /ServletProject/actiontag/add.jsp HTTP/1.1" 500 3180
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:55:04 +0900] "GET /ServletProject/actiontag/register.jsp HTTP/1.1" 200 747
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:55:07 +0900] "POST /ServletProject/actiontag/add.jsp HTTP/1.1" 500 3180
+0:0:0:0:0:0:0:1 - - [29/May/2026:10:55:23 +0900] "POST /ServletProject/actiontag/add.jsp HTTP/1.1" 200 254
