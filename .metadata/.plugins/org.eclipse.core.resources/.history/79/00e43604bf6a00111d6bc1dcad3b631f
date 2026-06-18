@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!--
+	- [] 연산자 : List 나  배열 객체의 값을 표현할 수 있다.
+	- [] 연산자의 왼쪽에는 맵, 빈, 배열, 리스트가 변수로 올 수 있다.
+	
+	- [] 연산자의 안의 값이 문자열이라면, 맵의 키이거나, 빈의 프로퍼티가 될 수 있고,
+	배열이나 리스트인 경우에는 인덱스가 될 수 있다.
+
+  -->
+<%@ page import = "com.actiontag.member" %>
+<%@ page import = "java.util.ArrayList" %>
+<%
+	ArrayList<String> singer= new ArrayList<>();
+	singer.add("집에");
+	singer.add("가고 싶은 날");
+	request.setAttribute("singer", singer);
+	
+	member[] member = new member[2];
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+</body>
+</html>

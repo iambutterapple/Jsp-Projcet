@@ -48,4 +48,6 @@
     <fullyQualifiedTypeName name="org.jfree.chart.JFreeChart"/>
     <fullyQualifiedTypeName name="org.jfree.chart.ChartFactory"/>
     <fullyQualifiedTypeName name="org.jfree.chart.plot.PlotOrientation"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

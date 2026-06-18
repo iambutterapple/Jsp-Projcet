@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!--
+	EL 연산자 및 예약어
+	
+	산술 연산자 : +,-,*,/ or div or mod
+	논리 연산자 : && or and , || 혹은 or, ! or not
+	관계 연산자 : 
+					== or eq
+					!= or ne
+					> or lt
+					< or gt
+					<= or le
+					>= or ge
+					
+	예약어 : true, false, null,instanceof, empty → null 이거나 비어있는지를 체크 하기 위한 연ㅅ나자
+			 										null 이거나 비어있으면 true를 반환
+			 										
+  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>
+				<b>표현식</b>
+			</td>
+			<td>
+				<b>값</b>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>\${2+5}</b>
+			</td>
+			<td>
+				<b>${2+5}</b>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>\${2/5}</b>
+			</td>
+			<td>
+				<b>${2+5}</b>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
