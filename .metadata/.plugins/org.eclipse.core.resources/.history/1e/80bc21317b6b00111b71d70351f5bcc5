@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!--
+	JSTL Core태그
+	 - 변수 지정, 흐름제어, URL 관리
+	 변수 지정 : set,remove
+	 흐름제어 : if, choose,foreEach,forToken
+	 url : import,redirect,url
+	 기타 : catch,out
+	 
+	 FMT 태그
+	 - 지역, 메시지형식, 숫자와 날짜 형식
+	 지역지정 : setLocale, requestEncoding
+	 메시지 처리 : bundle,message,setBundle
+	 숫자와 날짜 형식 : formatNumber,formatDate, parseDate
+	 					,parseNumber, setTimezone, timeZone
+	 
+	 DB 태그(sql)
+	 - 데이터베이스관리
+	 	query,update,param,dateparam, setDataSource
+	 함수
+  -->
+<%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>  
+<jsp:useBean id="vo" class="com.jstl.MemberVO"></jsp:useBean>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL</title>
+</head>
+<body>
+	<c:set target="${vo}" property="name" value="홍길동"/>
+	<c:set target="${vo}" property="email">
+		hong@naver.com
+	</c:set>
+	<c:set var="age" value="30"></c:set>
+	<c:set target=""
+</body>
+</html>

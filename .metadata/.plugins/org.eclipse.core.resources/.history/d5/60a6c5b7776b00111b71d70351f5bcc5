@@ -1,0 +1,17 @@
+package com.jstl;
+
+public class MemberVO {
+
+	private String name;
+	private String email;
+	private int age;
+	
+	public MemberVO() {
+
+	}
+
+	public MemberVO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}
