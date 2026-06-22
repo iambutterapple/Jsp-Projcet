@@ -600,3 +600,64 @@
 6월 04, 2026 13:50:04.403 [17948:2716:0604/135004.403:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:50:04.403] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
 6월 04, 2026 14:05:29.519 [17948:12836:0604/140529.518:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
 6월 04, 2026 14:11:18.200 [17948:12836:0604/141118.200:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -118
+
+6월 22, 2026 10:16:27.331 NEW SESSION
+6월 22, 2026 10:16:27.331 Created TensorFlow Lite XNNPACK delegate for CPU.
+6월 22, 2026 10:16:29.512 [15140:13364:0622/101629.512:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:16:45.310 [15140:15156:0622/101645.309:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:16:45.311 [15140:15156:0622/101645.309:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:16:45.389 [15140:15156:0622/101645.389:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:16:45.391 [15140:15156:0622/101645.390:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:16:47.802 [15140:15156:0622/101647.801:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:16:54.765 [15140:13364:0622/101654.763:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:17:49.668 [15140:13364:0622/101749.668:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:19:27.485 [15140:13364:0622/101927.484:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:40:02.384 Created TensorFlow Lite XNNPACK delegate for CPU.
+6월 22, 2026 10:40:04.490 [11204:10676:0622/104004.489:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:40:32.525 [11204:10676:0622/104032.525:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:41:05.550 [11204:844:0622/104105.550:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:41:05.550 [11204:844:0622/104105.550:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:41:05.638 [11204:844:0622/104105.638:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:41:05.640 [11204:844:0622/104105.639:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:41:06.295 [11204:844:0622/104106.295:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:41:27.592 [11204:10676:0622/104127.591:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED
+6월 22, 2026 10:44:00.758 [11204:844:0622/104400.757:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:44:00.758 [11204:844:0622/104400.757:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:44:00.806 [11204:844:0622/104400.805:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:44:00.807 [11204:844:0622/104400.807:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:44:01.464 [11204:844:0622/104401.464:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+
+6월 22, 2026 10:52:35.593 NEW SESSION
+6월 22, 2026 10:52:35.593 Created TensorFlow Lite XNNPACK delegate for CPU.
+6월 22, 2026 10:52:37.691 [7680:8864:0622/105237.691:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:52:58.127 [7680:8864:0622/105258.126:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:52:58.180 [7680:8104:0622/105258.180:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:52:58.180 [7680:8104:0622/105258.180:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:52:58.253 [7680:8104:0622/105258.252:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:52:58.254 [7680:8104:0622/105258.254:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:52:59.630 [7680:8104:0622/105259.630:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:53:44.14 [7680:8864:0622/105344.013:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:54:27.468 [7680:8104:0622/105427.468:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:27.469 [7680:8104:0622/105427.468:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:27.527 [7680:8104:0622/105427.526:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:27.528 [7680:8104:0622/105427.528:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:28.351 [7680:8104:0622/105428.351:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:28.687 [7680:8104:0622/105428.686:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:28.870 [7680:8104:0622/105428.869:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:29.121 [7680:8104:0622/105429.120:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:29.121 [7680:8104:0622/105429.120:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:29.195 [7680:8104:0622/105429.195:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:29.196 [7680:8104:0622/105429.196:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:54:29.663 [7680:8104:0622/105429.662:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 10:55:10.625 [7680:8864:0622/105510.625:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 10:58:18.226 [7680:8864:0622/105818.226:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 11:05:12.212 [7680:8104:0622/110512.212:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 11:05:12.213 [7680:8104:0622/110512.212:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 11:05:12.261 [7680:8104:0622/110512.261:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 11:05:12.263 [7680:8104:0622/110512.263:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 11:05:13.21 [7680:8104:0622/110513.020:ERROR:chrome\browser\ui\webui\ntp\new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+6월 22, 2026 11:06:18.87 [7680:8864:0622/110618.087:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+6월 22, 2026 11:13:06.882 [7680:8104:0622/111306.881:ERROR:components\device_event_log\device_event_log_impl.cc:200] [11:13:06.879] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+6월 22, 2026 11:29:43.295 [7680:8864:0622/112943.294:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+6월 22, 2026 11:30:48.396 [7680:8104:0622/113048.396:ERROR:components\device_event_log\device_event_log_impl.cc:200] [11:30:48.396] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+6월 22, 2026 11:31:03.595 [7680:8864:0622/113103.595:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:435] Failed to connect to MCS endpoint with error -118
