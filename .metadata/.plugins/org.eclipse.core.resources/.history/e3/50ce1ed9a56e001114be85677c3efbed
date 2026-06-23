@@ -1,0 +1,8 @@
+package Command;
+
+import javax.servlet.http.HttpServletRequest;
+
+public interface CommandProcess {
+
+	public String requestPro(HttpServletRequest)
+}

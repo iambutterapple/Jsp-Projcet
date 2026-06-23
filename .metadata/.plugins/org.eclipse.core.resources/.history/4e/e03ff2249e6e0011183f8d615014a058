@@ -1,0 +1,21 @@
+package com.mvc.control;
+/*
+ * 사용자의 요청을 처리할 비즈니스 로직이 구현된 xxxAction 객체의 생성을 담당
+ * 
+ * */
+public class ActionFactory {
+
+	private static ActionFactory factory;
+	private ActionFactory() {}
+	
+	
+	public static synchronized ActionFactory getInstance(){
+		
+		if(factory == null)
+		{
+			
+		}
+	}
+	
+	
+}

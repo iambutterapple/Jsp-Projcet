@@ -1,0 +1,12 @@
+package com.mvc.control;
+/*
+ * ActionForward
+ * 	XXXAction의 비즈니스 로직 수행후  ContrlServlet에게 반환하는 객체
+ * 	 - 이동할 url과 이동할 방법을 저장하고 있음.
+ * 
+ * */
+public class ActionForward {
+
+	private String url;
+	private boolean redirect;
+}

@@ -1,0 +1,10 @@
+package com.mvc.control;
+/*
+ * ActionForward
+ * 	XXXAction의 비즈니스 로직 수행후 
+ * 
+ * */
+public class ActionForward {
+
+	
+}

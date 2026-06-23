@@ -1,0 +1,16 @@
+package com.mvc;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Command.CommandProcess;
+
+public class MessageProcess implements CommandProcess {
+
+	@Override
+	public String requestPro(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+		request.setAttribute("message", "요청파라미터 파라미터 전달");
+		return "/mvc/";
+	}
+
+}

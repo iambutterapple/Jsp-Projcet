@@ -1,0 +1,7 @@
+package com.mvc.action;
+
+public class IndexAction implements Action{
+
+	@Override
+	p
+}
