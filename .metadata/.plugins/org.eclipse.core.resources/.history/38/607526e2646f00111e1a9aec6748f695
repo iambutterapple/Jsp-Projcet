@@ -1,0 +1,8 @@
+package com.mvcmem.action;
+
+import com.mvcmem.control.ActionForward;
+
+public interface Action {
+
+	public ActionForward
+}

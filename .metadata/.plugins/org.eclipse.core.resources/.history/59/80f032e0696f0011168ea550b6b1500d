@@ -1,0 +1,11 @@
+package com.mvcmem.model;
+
+public class StudentVO {
+
+	private String id;
+	private String id;
+	private String id;
+	private String id;
+	private String id;
+	
+}

@@ -1,0 +1,6 @@
+package com.mvcmem.model;
+
+public class ZipcodeVO {
+
+	private String zipcode;
+}

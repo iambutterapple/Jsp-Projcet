@@ -1,0 +1,7 @@
+package com.mvcmem.control;
+
+
+//리턴페이지(view)와 페이지 이동방식(redirect,forward)
+public class ActionForward {
+
+}

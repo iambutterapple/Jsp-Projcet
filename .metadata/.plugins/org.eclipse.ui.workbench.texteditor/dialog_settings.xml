@@ -20,8 +20,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="fileup"/>
+		<item key="selection" value="zipcodeRead"/>
 		<list key="findhistory">
+			<item value="zipcoderead"/>
 			<item value="fileup"/>
 			<item value="fileload"/>
 			<item value="orgfilename1"/>

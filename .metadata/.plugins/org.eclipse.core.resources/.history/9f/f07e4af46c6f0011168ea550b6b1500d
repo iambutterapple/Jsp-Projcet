@@ -1,0 +1,21 @@
+package com.mvcmem.model;
+
+import java.sql.*;
+import javax.sql.*;
+
+
+import javax.naming.*;
+import java.util.*;
+
+public class StudentDAO {
+	private static StudentDAO instance = null;
+	public StudentDAO() {}
+	
+	public static StudentDAO getInstance() {
+		if(instance == null) {
+			synchronized (instance) {
+				
+			}
+		}
+	}
+}
