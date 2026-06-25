@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="oracle.net.aso.p"/>
-    <fullyQualifiedTypeName name="com.boardone.BoardVO"/>
-    <fullyQualifiedTypeName name="com.boardone.ConUtil"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.cookie.LoginDBbean"/>
@@ -33,16 +27,11 @@
     <fullyQualifiedTypeName name="java.lang.InstantiationException"/>
     <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
     <fullyQualifiedTypeName name="Command.CommandProcess"/>
-    <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="com.mvcmem.control.ActionFactory"/>
-    <fullyQualifiedTypeName name="com.mvcmem.action.Action"/>
     <fullyQualifiedTypeName name="com.mvcmem.action.IndexAction"/>
-    <fullyQualifiedTypeName name="com.memberone.StudnetVO"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="javax.naming.NamingException"/>
@@ -54,10 +43,21 @@
     <fullyQualifiedTypeName name="com.mvcmem.model.ZipcodeVO"/>
     <fullyQualifiedTypeName name="com.memberone.ZipCodeVO"/>
     <fullyQualifiedTypeName name="com.mvcmem.action.RegProcAction"/>
-    <fullyQualifiedTypeName name="com.mvcmem.model.StudnetVO"/>
     <fullyQualifiedTypeName name="com.mvcmem.action.LoginFormAction"/>
     <fullyQualifiedTypeName name="com.mvcmem.action.LoginProc"/>
-    <fullyQualifiedTypeName name="com.mvcmem.model.StudentDAO"/>
+    <fullyQualifiedTypeName name="com.mvcmem.action.Action"/>
+    <fullyQualifiedTypeName name="com.mvcmem.action.LogoutAction"/>
+    <fullyQualifiedTypeName name="com.mvcmem.action.ModifyFormAction"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.mvcmem.model.StudentDAO"/>
+    <fullyQualifiedTypeName name="com.memberone.StudnetVO"/>
+    <fullyQualifiedTypeName name="com.mvcmem.action.ModifyProcAction"/>
+    <fullyQualifiedTypeName name="com.mvcmem.model.StudnetVO"/>
     <fullyQualifiedTypeName name="com.mvcmem.control.ActionForward"/>
+    <fullyQualifiedTypeName name="com.mvcmem.action.DeleteFormAction"/>
+    <fullyQualifiedTypeName name="com.mvcmem.action.DeleteProcAction"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="com.board.action.CommandAction"/>
 </qualifiedTypeNameHistroy>

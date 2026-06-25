@@ -1,6 +1,0 @@
-package com.el;
-
-public class DataUtil {
-
-	private static SimpleDateFormat matter
-}

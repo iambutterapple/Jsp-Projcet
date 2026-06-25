@@ -1,0 +1,3 @@
+/board/list.bdo=com.board.action.ListAction
+/board/writeForm.bdo=com.board.action.WriteFromAction
+/board/writeProForm.bdo=com.board.action.WriteFromAction

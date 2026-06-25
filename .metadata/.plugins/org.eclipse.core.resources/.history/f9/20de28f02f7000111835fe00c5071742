@@ -1,0 +1,5 @@
+package com.mvcmem.action;
+
+public class LogoutAction {
+
+}

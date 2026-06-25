@@ -1,0 +1,44 @@
+package com.board.controller;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class ControllerActiojn extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	/*
+	 * 명령어와 명령어 처리클래스를 쌍으로 저장(Map)
+	 * */
+	private Map<String,Object> commandMap = 
+			new HashMap<String, Object>();
+	
+	/*
+	 * 명령어와 처리클래스가 매핑되어 있는 properties 파일을
+	 * 읽어와서 Map 객체인 CommandMap에 저장
+	 * */
+	
+   
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+	}	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		requestPro(request, response);
+	}	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		requestPro(request, response);
+	}
+	protected void requestPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		
+	
+	}
+
+}

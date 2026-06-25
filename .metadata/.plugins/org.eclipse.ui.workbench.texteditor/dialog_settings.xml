@@ -20,8 +20,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="zipcodeRead"/>
+		<item key="selection" value="updateCheck"/>
 		<list key="findhistory">
+			<item value="updateCheck"/>
 			<item value="zipcoderead"/>
 			<item value="fileup"/>
 			<item value="fileload"/>
@@ -36,7 +37,6 @@
 			<item value="content"/>
 			<item value="wirteForm"/>
 			<item value="writer"/>
-			<item value="updateCheck"/>
 		</list>
 		<list key="replacehistory">
 		</list>

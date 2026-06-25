@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
-	<c:set var="loginID" value="${sessionScope.loginId }"></c:set>
+	<c:set var="loginID" value="${sessionScope.loginID }"></c:set>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Log In</title>
-	<link href="style.css" type="text/css" ref="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <c:choose>
@@ -17,7 +17,7 @@
 	<table width="400" border="1">
 		<tr>
 			<td colspan="3" align="center">
-			<c:out value="${loginId }"/>
+			<c:out value="${loginID }"/>
 			님 환영합니다.</td>
 		</tr>
 		<tr>
